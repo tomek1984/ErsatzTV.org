@@ -28,7 +28,7 @@ export default function HomeHero() {
             <div className={styles.imageContainer}>
               <img
                 src="/images/home/epg-example.png"
-                alt="EPG Example"
+                alt="Electronic Program Guide (EPG) example showing custom channel schedule grid"
                 className={styles.image}
               />
             </div>
