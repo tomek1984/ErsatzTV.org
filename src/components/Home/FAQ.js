@@ -21,7 +21,7 @@ export default function FAQ() {
         <h2 style={{ textAlign: "center", marginBottom: 32 }}>FAQ</h2>
         {faqs.map((f, i) => (
           <div key={i} style={{ marginBottom: 24 }}>
-            <strong style={{ fontSize: 17 }}>{f.q}</strong>
+            <h3 style={{ fontSize: 17, margin: 0, fontWeight: "bold" }}>{f.q}</h3>
             <p style={{ color: "#aaa", margin: "6px 0 0 0" }}>{f.a}</p>
           </div>
         ))}
