@@ -48,7 +48,7 @@ export default function HowItWorks() {
                 boxShadow: "0 2px 12px #0002",
               }}
             >
-              <div style={{ fontSize: 32, marginBottom: 12 }}>{s.icon}</div>
+              <div style={{ fontSize: 32, marginBottom: 12 }} aria-hidden="true">{s.icon}</div>
               <h4 style={{ margin: "8px 0" }}>{s.title}</h4>
               <p style={{ color: "#aaa", fontSize: 15 }}>{s.desc}</p>
             </div>

@@ -17,7 +17,8 @@ export default function WhatIsErsatzTV() {
           <div style={{ fontSize: 48, marginBottom: 16 }}>
             <img
               src="/images/branding/ersatztv_icon@84.png"
-              alt="ErsatzTV"
+              alt=""
+              aria-hidden="true"
               style={{ width: 84, height: 81 }}
             />
           </div>
