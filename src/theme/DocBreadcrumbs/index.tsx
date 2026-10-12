@@ -52,7 +52,12 @@ function BreadcrumbsItem({
 }
 
 export default function DocBreadcrumbs(): ReactNode {
-  const breadcrumbs = useSidebarBreadcrumbs();
+  let breadcrumbs: ReturnType<typeof useSidebarBreadcrumbs> = null;
+  try {
+    breadcrumbs = useSidebarBreadcrumbs();
+  } catch {
+    return null;
+  }
   const homePageRoute = useHomePageRoute();
 
   if (!breadcrumbs) {
