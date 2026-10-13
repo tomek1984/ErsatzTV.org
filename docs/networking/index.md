@@ -33,8 +33,7 @@ The signing key must consist of 32 random characters.
 
 ### Generating Access Tokens
 
-http://jwtbuilder.jamiekurtz.com/ can be used to generate access tokens.
+[https://jwt.io/](https://jwt.io/) can be used to generate access tokens securely over HTTPS.
 
-1. Under **Signed JSON Web Token** enter the issuer signing key in the **Key** field
-2. Select **HS256**
-3. Click **Create Signed JWT**
+1. Under **VERIFY SIGNATURE** enter the issuer signing key in the secret field
+2. Select algorithm **HS256**
