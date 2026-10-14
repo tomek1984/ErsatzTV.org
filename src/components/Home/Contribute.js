@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "@docusaurus/Link";
 
 export default function Contribute() {
   return (
@@ -10,14 +11,15 @@ export default function Contribute() {
           us improve by submitting code, writing documentation, reporting
           issues, or sharing feedback.
         </p>
-        <a
-          href="https://github.com/ErsatzTV/ErsatzTV"
+        <Link
+          to="https://github.com/ErsatzTV/ErsatzTV"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
+          aria-label="Contribute on GitHub (opens in a new tab)"
           className="button button--secondary button--md"
         >
           Contribute on GitHub
-        </a>
+        </Link>
       </div>
     </section>
   );
