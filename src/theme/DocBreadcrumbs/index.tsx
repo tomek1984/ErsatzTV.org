@@ -22,7 +22,11 @@ function BreadcrumbsItemLink({
 }): ReactNode {
   const className = 'breadcrumbs__link';
   if (isLast) {
-    return <span className={className}>{children}</span>;
+    return (
+      <span className={className} aria-current="page">
+        {children}
+      </span>
+    );
   }
   return href ? (
     <Link className={className} href={href}>
