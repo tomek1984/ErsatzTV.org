@@ -42,6 +42,27 @@ const config = {
         href: "/images/branding/site.webmanifest",
       },
     },
+    {
+      tagName: "meta",
+      attributes: {
+        "http-equiv": "X-Content-Type-Options",
+        content: "nosniff",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        "http-equiv": "Referrer-Policy",
+        content: "strict-origin-when-cross-origin",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        "http-equiv": "X-Frame-Options",
+        content: "SAMEORIGIN",
+      },
+    },
   ],
   presets: [
     [
