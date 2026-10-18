@@ -7,10 +7,16 @@ export default function DocBreadcrumbsStructuredData(props: Props): ReactNode {
   const structuredData = useBreadcrumbsStructuredData({
     breadcrumbs: props.breadcrumbs,
   });
+  // Sanitize JSON string by escaping '<' to '\u003c' to prevent inline script injection/XSS
+  const safeStructuredData = JSON.stringify(structuredData).replace(
+    /</g,
+    '\\u003c',
+  );
+
   return (
     <Head>
       <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
+        {safeStructuredData}
       </script>
     </Head>
   );
