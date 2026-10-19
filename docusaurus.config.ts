@@ -42,6 +42,13 @@ const config = {
         href: "/images/branding/site.webmanifest",
       },
     },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "referrer",
+        content: "strict-origin-when-cross-origin",
+      },
+    },
   ],
   presets: [
     [
