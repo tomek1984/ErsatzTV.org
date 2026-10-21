@@ -41,7 +41,7 @@ export default function KeyFeatures() {
         <div className={styles.grid}>
           {features.map((f, i) => (
             <div key={i} className={styles.featureCard}>
-              <div className={styles.icon}>{f.icon}</div>
+              <div className={styles.icon} aria-hidden="true">{f.icon}</div>
               <h4 className={styles.featureTitle}>{f.title}</h4>
               <p className={styles.description}>{f.desc}</p>
             </div>
