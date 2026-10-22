@@ -14,26 +14,26 @@ export default function CommunitySupport() {
           <a
             href="https://discord.ersatztv.org"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="button button--secondary button--md"
           >
-            Join Discord
+            Join Discord <span className="sr-only">(opens in a new tab)</span>
           </a>
           <a
             href="https://features.ersatztv.org"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="button button--secondary button--md"
           >
-            Vote on Feature Requests
+            Vote on Feature Requests <span className="sr-only">(opens in a new tab)</span>
           </a>
           <a
             href="https://github.com/ErsatzTV/ErsatzTV"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="button button--secondary button--md"
           >
-            View on GitHub
+            View on GitHub <span className="sr-only">(opens in a new tab)</span>
           </a>
         </div>
       </div>
