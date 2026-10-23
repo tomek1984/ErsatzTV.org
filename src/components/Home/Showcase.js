@@ -35,6 +35,7 @@ export default function Showcase() {
               href="https://discord.ersatztv.org"
               target="_blank"
               rel="noopener"
+              aria-label="Discord (opens in a new tab)"
               style={{ color: "#00bcd4", textDecoration: "underline" }}
             >
               Discord
@@ -97,6 +98,7 @@ export default function Showcase() {
             href="https://discord.ersatztv.org"
             target="_blank"
             rel="noopener"
+            aria-label="Submit Your Channel on Discord (opens in a new tab)"
             className="button button--secondary button--md"
           >
             Submit Your Channel on Discord
