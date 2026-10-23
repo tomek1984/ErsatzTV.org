@@ -14,6 +14,7 @@ export default function Contribute() {
           href="https://github.com/ErsatzTV/ErsatzTV"
           target="_blank"
           rel="noopener"
+          aria-label="Contribute on GitHub (opens in a new tab)"
           className="button button--secondary button--md"
         >
           Contribute on GitHub

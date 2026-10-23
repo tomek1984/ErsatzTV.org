@@ -15,6 +15,7 @@ export default function CommunitySupport() {
             href="https://discord.ersatztv.org"
             target="_blank"
             rel="noopener"
+            aria-label="Join Discord (opens in a new tab)"
             className="button button--secondary button--md"
           >
             Join Discord
@@ -23,6 +24,7 @@ export default function CommunitySupport() {
             href="https://features.ersatztv.org"
             target="_blank"
             rel="noopener"
+            aria-label="Vote on Feature Requests (opens in a new tab)"
             className="button button--secondary button--md"
           >
             Vote on Feature Requests
@@ -31,6 +33,7 @@ export default function CommunitySupport() {
             href="https://github.com/ErsatzTV/ErsatzTV"
             target="_blank"
             rel="noopener"
+            aria-label="View on GitHub (opens in a new tab)"
             className="button button--secondary button--md"
           >
             View on GitHub
