@@ -10,10 +10,12 @@ export default function Contribute() {
           us improve by submitting code, writing documentation, reporting
           issues, or sharing feedback.
         </p>
+        {/* Security: Use rel="noopener noreferrer" on external links to prevent reverse tabnabbing and referrer leakage */}
         <a
           href="https://github.com/ErsatzTV/ErsatzTV"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
+          aria-label="Contribute on GitHub (opens in a new tab)"
           className="button button--secondary button--md"
         >
           Contribute on GitHub
