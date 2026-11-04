@@ -31,10 +31,12 @@ export default function Showcase() {
           <br />
           <span style={{ color: "#fff", fontWeight: 500 }}>
             Share your channel or EPG setup on our{" "}
+            {/* Prevent reverse tabnabbing and referrer leakage */}
             <a
               href="https://discord.ersatztv.org"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
+              aria-label="Discord (opens in a new tab)"
               style={{ color: "#00bcd4", textDecoration: "underline" }}
             >
               Discord
@@ -93,10 +95,12 @@ export default function Showcase() {
           ))}
         </div>
         <div style={{ marginTop: 40 }}>
+          {/* Prevent reverse tabnabbing and referrer leakage */}
           <a
             href="https://discord.ersatztv.org"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
+            aria-label="Submit Your Channel on Discord (opens in a new tab)"
             className="button button--secondary button--md"
           >
             Submit Your Channel on Discord
