@@ -1,0 +1,4 @@
+## 2025-05-18 - Reverse Tabnabbing and Referrer Leakage Prevention in Custom Theme Components
+**Vulnerability:** External links with `target="_blank"` used only `rel="noopener"`, which fails to suppress referrer headers and, in legacy user agents or partial implementations, risks window manipulation and referrer leakage when opening untrusted or external URLs.
+**Learning:** React components added to the custom home view (`CommunitySupport`, `Showcase`, `Contribute`) bypassed default Docusaurus link transformations by rendering raw `<a>` tags with `rel="noopener"`.
+**Prevention:** In React components rendering external links opening in a new tab (`target="_blank"`), enforce `rel="noopener noreferrer"` and descriptive `aria-label` tags for both security against reverse tabnabbing / referrer leakage and screen reader accessibility.
