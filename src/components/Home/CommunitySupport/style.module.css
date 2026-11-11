@@ -19,6 +19,12 @@
   flex-wrap: wrap;
 }
 
+.buttonGroup a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 @media (max-width: 768px) {
   .buttonGroup {
     flex-direction: column;
