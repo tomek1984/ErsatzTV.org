@@ -1,4 +1,5 @@
 import React from "react";
+import IconExternalLink from "@theme/Icon/ExternalLink";
 
 export default function Contribute() {
   return (
@@ -13,10 +14,13 @@ export default function Contribute() {
         <a
           href="https://github.com/ErsatzTV/ErsatzTV"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
+          aria-label="Contribute on GitHub (opens in a new tab)"
           className="button button--secondary button--md"
+          style={{ display: "inline-flex", alignItems: "center", gap: 6 }}
         >
           Contribute on GitHub
+          <IconExternalLink width={14} height={14} />
         </a>
       </div>
     </section>
