@@ -11,10 +11,11 @@ export default function CommunitySupport() {
           the project. Connect with us on Discord or explore the code on GitHub!
         </p>
         <div className={styles.buttonGroup}>
+          {/* Security: Use rel="noopener noreferrer" to prevent window.opener hijacking and referrer leakage */}
           <a
             href="https://discord.ersatztv.org"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="button button--secondary button--md"
           >
             Join Discord
@@ -22,7 +23,7 @@ export default function CommunitySupport() {
           <a
             href="https://features.ersatztv.org"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="button button--secondary button--md"
           >
             Vote on Feature Requests
@@ -30,7 +31,7 @@ export default function CommunitySupport() {
           <a
             href="https://github.com/ErsatzTV/ErsatzTV"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="button button--secondary button--md"
           >
             View on GitHub
